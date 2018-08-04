@@ -1,3 +1,7 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-gb"
 title = "Dr Damien Downing"
+theme = "beg"
+
+[params]
+    custom_css = ["css/custom.css"]
