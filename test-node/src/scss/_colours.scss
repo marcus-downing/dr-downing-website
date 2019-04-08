@@ -1,0 +1,10 @@
+$gray-50: #fafbfc;
+// $gray-50: #fbfcfd;
+$gray-0: #fcfdfe;
+
+@mixin gradient-bg {
+	background: $gray-50;
+	background: -moz-linear-gradient(left, $gray-50 0%, $gray-0 35%, $gray-0 65%, $gray-50 100%);
+	background: -webkit-linear-gradient(left, $gray-50 0%, $gray-0 35%, $gray-0 65%, $gray-50 100%);
+	background: linear-gradient(to right, $gray-50 0%, $gray-0 35%, $gray-0 65%, $gray-50 100%);
+}

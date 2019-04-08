@@ -1,0 +1,34 @@
+body {
+	@include gradient-bg;
+}
+
+.breadcrumb {
+	background: none;
+	padding: 0;
+}
+
+section {
+	padding: 1.5rem 0;
+
+	&.gradient {
+		@include gradient-bg;
+	}
+
+	&.section-video {
+		padding: 0;
+	}
+
+	&.section-index-conditions {
+		background: $teal;
+		padding-bottom: 0.5rem;
+
+		.card {
+			min-width: 18rem;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+a {
+	color: $teal;
+}

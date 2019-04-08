@@ -1,0 +1,32 @@
+{
+  "name": "drdamiendowning",
+  "version": "1.0.0",
+  "description": "Dr Damien Downing website",
+  "main": "src/make.js",
+  "scripts": {
+    "build": "cd src; node make.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/marcus-downing/dr-downing-website.git"
+  },
+  "author": "Marcus Downing",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/marcus-downing/dr-downing-website/issues"
+  },
+  "homepage": "https://github.com/marcus-downing/dr-downing-website#readme",
+  "devDependencies": {
+    "light-server": "^2.6.2"
+  },
+  "dependencies": {
+    "bootstrap-scss": "^4.3.1",
+    "dateformat": "^3.0.3",
+    "gray-matter": "^4.0.2",
+    "handlebars": "^4.1.1",
+    "handlebars-layouts": "^3.1.4",
+    "lodash": "^4.17.11",
+    "markdown": "^0.5.0",
+    "node-sass": "^4.11.0"
+  }
+}

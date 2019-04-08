@@ -1,0 +1,10 @@
+#header {
+	background: $gray-100;
+	z-index: 100;
+	border-bottom: 1px solid $gray-200;
+	// box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+
+	h1 {
+		font-size: 1.5rem;
+	}
+}
