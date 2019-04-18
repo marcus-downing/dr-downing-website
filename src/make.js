@@ -40,6 +40,16 @@ h.registerPartial('footer', fs.readFileSync('./templates/footer.html.h', 'utf8')
 var pages = [];
 var articles = [];
 
+function autop(content) {
+	var paras = content.split(/\n/);
+	paras = _.map(paras, para => {
+		para = para.trim();
+		para = para.replace(/^<p>|<\/p>$/, '');
+		return '<p>'+para+'</p>';
+	});
+	return paras.join("\n");
+}
+
 function loadMarkdownFile(filename) {
 	// extract frontmatter
 	var data = fs.readFileSync(filename, 'utf-8');
@@ -51,7 +61,7 @@ function loadMarkdownFile(filename) {
 	};
 
 	if (_.has(matter.data, "excerpt")) {
-		data.excerpt = matter.data.excerpt;
+		data.excerpt = autop(matter.data.excerpt);
 	} else {
 		var firstpara = matter.content.split(/\n/)[0];
 		data.excerpt = markdown.toHTML(firstpara);

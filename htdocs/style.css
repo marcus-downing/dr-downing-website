@@ -7077,7 +7077,11 @@ a {
   color: #20c997; }
   a:hover {
     color: black; }
+  a.card p {
+    color: black; }
   a.card:hover {
     background: #20c997;
     color: white;
     text-decoration: none; }
+    a.card:hover p {
+      color: white; }

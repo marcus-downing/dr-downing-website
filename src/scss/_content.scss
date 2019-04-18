@@ -50,10 +50,16 @@ a {
 	}
 
 	&.card {
+		p {
+			color: black;
+		}
 		&:hover {
 			background: $teal;
 			color: white;
 			text-decoration: none;
+			p {
+				color: white;
+			}
 		}
 	}
 }

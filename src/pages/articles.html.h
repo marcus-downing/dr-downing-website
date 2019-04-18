@@ -15,14 +15,14 @@
 
 		<div class="card-columns">
 {{#each articles}}
-			<article class='card card-article'>
+			<a href='{{url}}' class='card card-article'>
 				<div class="card-body">
-      				<h3 class="card-title"><a href='{{url}}'>{{title}}</a></h3>
+      				<h3 class="card-title">{{title}}</h3>
 					<div class='excerpt'>
-						{{excerpt}}
+						{{{excerpt}}}
 					</div>
 				</div>
-			</article>
+			</a>
 {{/each}}
 		</div>
 	</div>
