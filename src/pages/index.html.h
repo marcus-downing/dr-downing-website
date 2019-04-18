@@ -62,6 +62,14 @@
 <section class="gradient">
 	<div class='container'>
 		<h4>Articles</h4>
+{{#each articles}}
+			<article>
+				<h3><a href='{{url}}'>{{title}}</a></h3>
+				<div class='excerpt'>
+					{{excerpt}}
+				</div>
+			</article>
+{{/each}}
 		<p>...</p>
 	</div>
 </section>

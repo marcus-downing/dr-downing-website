@@ -36,11 +36,9 @@ h.registerPartial('layout', fs.readFileSync('./templates/layout.html.h', 'utf8')
 h.registerPartial('header', fs.readFileSync('./templates/header.html.h', 'utf8'));
 h.registerPartial('footer', fs.readFileSync('./templates/footer.html.h', 'utf8'));
 
-// HOME PAGE
-
+// HOME PAGE and SPECIAL PAGES
 
 _.each(['index'], fn => {
-
 	var template = h.compile(fs.readFileSync('./pages/'+fn+'.html.h', 'utf8'));
 	var data = {};
 	var out = template(data);
@@ -51,15 +49,36 @@ _.each(['index'], fn => {
 });
 
 
-// fs.readFile('./templates/index.html.h', 'utf-8', (err, data) => {
-// 	var homeTemplate = h.compile(data);
-// 	var homeData = {};
-// 	var home = homeTemplate(homeData);
-
-// 	fs.writeFile('../htdocs/index.html', home, (err) => {});
-// });
-
 // STATIC PAGES
+
+var pageTemplate = h.compile(fs.readFileSync('./templates/page.html.h', 'utf-8'));
+fs.readdir('./pages', { withFileTypes: true }, (err, files) => {
+	if (err) {
+		console.log(err);
+		return;
+	}
+	_.each(files, file => {
+		if (file.name.match(/\.md$/)) {
+			var filename = './pages/'+file.name;
+			var name = file.name.replace(/\.md$/, '');
+
+			// extract frontmatter
+			var data = fs.readFileSync(filename, 'utf-8');
+			var matter = grayMatter(data);
+
+			// compile markdown
+			var content = markdown.toHTML(matter.content);
+
+			var out = pageTemplate({
+				title: matter.data.title,
+				article: content
+			});
+			fs.writeFile('../htdocs/'+name+'.html', out, (err) => {
+				if (err) console.log(err);
+			});
+		}
+	});
+})
 
 
 // ARTICLES

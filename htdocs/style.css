@@ -7054,10 +7054,8 @@ section {
     background: -moz-linear-gradient(left, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%);
     background: -webkit-linear-gradient(left, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%);
     background: linear-gradient(to right, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%); }
-  section.section-video {
-    padding: 0; }
   section.section-index-conditions {
-    background: #20c997;
+    background: #ced4da;
     padding-bottom: 0.5rem; }
     section.section-index-conditions .card {
       min-width: 18rem;
