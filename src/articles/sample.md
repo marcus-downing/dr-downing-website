@@ -1,5 +1,6 @@
 ---
 title: Sample Article
+excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque maximus justo. Duis tincidunt viverra massa, quis fermentum odio interdum a. Suspendisse sed tempus lectus. Proin sed orci sollicitudin, rhoncus justo iaculis, maximus lorem.
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque maximus justo. Duis tincidunt viverra massa, quis fermentum odio interdum a. Suspendisse sed tempus lectus. Proin sed orci sollicitudin, rhoncus justo iaculis, maximus lorem. *Curabitur* **sodales** molestie nunc, non vulputate est mollis ac. Suspendisse et lacinia felis, ac sodales felis. Vestibulum est nunc, venenatis sed magna at, ullamcorper interdum urna. Quisque rutrum libero eget nibh aliquet gravida. Vestibulum non enim quis ex condimentum pharetra et eget nisl. Nunc finibus sem sed turpis aliquet mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus et dolor et urna eleifend tincidunt. Sed vel ante molestie, blandit erat vitae, tincidunt nisi.

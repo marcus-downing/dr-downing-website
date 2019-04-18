@@ -6,16 +6,19 @@
 
 		<ul class="nav">
 			<li class="nav-item">
-				<a class="nav-link" href="/about">About</a>
+				<a class="nav-link" href="/">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/conditions">Conditions</a>
+				<a class="nav-link" href="/about/">About</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/articles">Articles</a>
+				<a class="nav-link" href="/conditions/">Conditions</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/books">Books</a>
+				<a class="nav-link" href="/articles/">Articles</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/books/">Books</a>
 			</li>
 		</ul>
     </nav>

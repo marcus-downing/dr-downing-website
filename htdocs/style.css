@@ -7037,6 +7037,9 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 4rem;
   margin-bottom: 2rem; }
 
+html {
+  /*font-size: 12px;*/ }
+
 body {
   background: #fafbfc;
   background: -moz-linear-gradient(left, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%);
@@ -7047,6 +7050,13 @@ body {
   background: none;
   padding: 0; }
 
+blockquote {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px; }
+  blockquote, blockquote p {
+    font-size: 1.4rem; }
+
 section {
   padding: 1.5rem 0; }
   section.gradient {
@@ -7054,6 +7064,8 @@ section {
     background: -moz-linear-gradient(left, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%);
     background: -webkit-linear-gradient(left, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%);
     background: linear-gradient(to right, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%); }
+  section.section-video {
+    padding-bottom: 0; }
   section.section-index-conditions {
     background: #ced4da;
     padding-bottom: 0.5rem; }
@@ -7063,3 +7075,9 @@ section {
 
 a {
   color: #20c997; }
+  a:hover {
+    color: black; }
+  a.card:hover {
+    background: #20c997;
+    color: white;
+    text-decoration: none; }

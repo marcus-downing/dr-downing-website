@@ -1,3 +1,6 @@
+html {
+	/*font-size: 12px;*/
+}
 body {
 	@include gradient-bg;
 }
@@ -7,6 +10,16 @@ body {
 	padding: 0;
 }
 
+blockquote {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 400px;
+	&, p {
+		font-size: 1.4rem;
+	}
+}
+
+
 section {
 	padding: 1.5rem 0;
 
@@ -15,7 +28,7 @@ section {
 	}
 
 	&.section-video {
-		// padding: 0;
+		padding-bottom: 0;
 	}
 
 	&.section-index-conditions {
@@ -32,4 +45,15 @@ section {
 
 a {
 	color: $teal;
+	&:hover {
+		color: black;
+	}
+
+	&.card {
+		&:hover {
+			background: $teal;
+			color: white;
+			text-decoration: none;
+		}
+	}
 }
