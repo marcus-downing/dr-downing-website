@@ -4,7 +4,7 @@
 <section class='section-video gradient'>
 	<div class='container'>
 		<div class="embed-responsive embed-responsive-16by9">
-			<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=pW-FzAelj1o" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/pW-FzAelj1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
 </section>
