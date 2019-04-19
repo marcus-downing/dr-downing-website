@@ -76,7 +76,7 @@
 			<a class='card' href='/conditions/parkinsons/'>
 				<img src="/assets/kitten.jpg" class="card-img-top" alt="Kitten">
 				<div class="card-body">
-					<h4 class="card-title">Parkinson's</h4>
+					<h4 class="card-title">Parkinson's Disease</h4>
 				</div>
 			</a>
 
