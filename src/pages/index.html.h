@@ -26,10 +26,12 @@
 					for 20 years Editor of the Journal of Nutritional and Environmental Medicine.
 					He serves on the Editorial Board of the <a href="http://orthomolecular.org/">Orthomolecular News Service</a>.
 				</p>
+			<!--
 				<p>
 					His 1988 book Daylight Robbery pioneered our understanding of how vital sunlight and vitamin D are for health.
 					His book The Vitamin Cure for Allergies was released in 2010, and The Vitamin Cure for Digestive Disorders in 2013.
 				</p>
+			-->
 				<p>
 					He has particular interests in membrane lipids and lipid therapy, in mitochondrial dysfunction, 
 					in environmental toxic effects, and in sunlight and vitamin D.
@@ -97,6 +99,7 @@
 			<a href='{{url}}' class='card card-article'>
 				<div class="card-body">
       				<h3 class="card-title">{{title}}</h3>
+      				{{#if subtitle}}<h5 class='subtitle'>{{subtitle}}</h5>{{/if}}
 					<div class='excerpt'>
 						{{{excerpt}}}
 					</div>

@@ -57,16 +57,18 @@ function loadMarkdownFile(filename) {
 
 	var data = {
 		title: matter.data.title,
+		subtitle: _.has(matter.data, "subtitle") ? matter.data.subtitle : false,
 		article: markdown.toHTML(matter.content),
 	};
 
-	if (_.has(matter.data, "excerpt")) {
+	if (_.has(matter.data, "excerpt") && matter.data.excerpt != "") {
 		data.excerpt = autop(matter.data.excerpt);
 	} else {
-		var firstpara = matter.content.split(/\n/)[0];
+		var firstpara = matter.content.trim().split(/\n/)[0];
 		data.excerpt = markdown.toHTML(firstpara);
 	}
 
+	// data.excerpt = data.excerpt.replace(/(\.|;|:)$/, '')+'...';
 	// console.log(data);
 	return data;
 }

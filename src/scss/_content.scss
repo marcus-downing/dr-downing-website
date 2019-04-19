@@ -5,6 +5,10 @@ body {
 	@include gradient-bg;
 }
 
+.subtitle {
+	margin-top: 0;
+}
+
 .breadcrumb {
 	background: none;
 	padding: 0;
@@ -41,6 +45,10 @@ section {
 			margin-bottom: 1rem;
 		}
 	}
+}
+
+p {
+	max-width: 900px;
 }
 
 a {

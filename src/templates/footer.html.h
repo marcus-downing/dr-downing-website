@@ -1,3 +1,10 @@
 <div class='container'>
-	Footer
+    <nav class="navbar">
+		<ul class="nav">
+			<li class="nav-item">
+				<a class="nav-link" href="/privacy">Privacy Notice</a>
+			</li>
+			<li>...</li>
+		</ul>
+    </nav>
 </div>

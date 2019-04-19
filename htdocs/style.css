@@ -7046,6 +7046,9 @@ body {
   background: -webkit-linear-gradient(left, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%);
   background: linear-gradient(to right, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%); }
 
+.subtitle {
+  margin-top: 0; }
+
 .breadcrumb {
   background: none;
   padding: 0; }
@@ -7072,6 +7075,9 @@ section {
     section.section-index-conditions .card {
       min-width: 18rem;
       margin-bottom: 1rem; }
+
+p {
+  max-width: 900px; }
 
 a {
   color: #20c997; }
