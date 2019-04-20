@@ -36,14 +36,22 @@ section {
 	}
 
 	&.section-index-conditions {
-		// background: $teal;
-		background: $gray-400;
+		@include dark-section-bg;
 		padding-bottom: 0.5rem;
 
 		.card {
 			min-width: 18rem;
 			margin-bottom: 1rem;
 		}
+	}
+}
+
+.card.card-book {
+	background: none;
+	border: none;
+
+	img.card-img-top {
+		box-shadow: 0 1.5px 4px rgba(0,0,0,0.3);
 	}
 }
 

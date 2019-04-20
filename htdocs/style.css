@@ -7027,6 +7027,19 @@ a.text-dark:hover, a.text-dark:focus {
   #header h1 {
     font-size: 1.5rem; }
 
+.navbar {
+  padding: 0; }
+  .navbar, .navbar li, .navbar a {
+    line-height: 4rem;
+    padding-top: 0;
+    padding-bottom: 0; }
+  .navbar a {
+    font-weight: bold;
+    color: #20c997; }
+    .navbar a:hover, .navbar a:active {
+      background: #20c997;
+      color: white; }
+
 #footer {
   background: #f8f9fa;
   z-index: 99;
@@ -7042,9 +7055,9 @@ html {
 
 body {
   background: #fafbfc;
-  background: -moz-linear-gradient(left, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%);
-  background: -webkit-linear-gradient(left, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%);
-  background: linear-gradient(to right, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%); }
+  background: -moz-linear-gradient(left, #f8f9fa 0%, #fcfdfe 35%, #fcfdfe 65%, #f8f9fa 100%);
+  background: -webkit-linear-gradient(left, #f8f9fa 0%, #fcfdfe 35%, #fcfdfe 65%, #f8f9fa 100%);
+  background: linear-gradient(to right, #f8f9fa 0%, #fcfdfe 35%, #fcfdfe 65%, #f8f9fa 100%); }
 
 .subtitle {
   margin-top: 0; }
@@ -7064,17 +7077,26 @@ section {
   padding: 1.5rem 0; }
   section.gradient {
     background: #fafbfc;
-    background: -moz-linear-gradient(left, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%);
-    background: -webkit-linear-gradient(left, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%);
-    background: linear-gradient(to right, #fafbfc 0%, #fcfdfe 35%, #fcfdfe 65%, #fafbfc 100%); }
+    background: -moz-linear-gradient(left, #f8f9fa 0%, #fcfdfe 35%, #fcfdfe 65%, #f8f9fa 100%);
+    background: -webkit-linear-gradient(left, #f8f9fa 0%, #fcfdfe 35%, #fcfdfe 65%, #f8f9fa 100%);
+    background: linear-gradient(to right, #f8f9fa 0%, #fcfdfe 35%, #fcfdfe 65%, #f8f9fa 100%); }
   section.section-video {
     padding-bottom: 0; }
   section.section-index-conditions {
     background: #ced4da;
+    background: -moz-linear-gradient(left, #ced4da 0%, #dee2e6 35%, #dee2e6 65%, #ced4da 100%);
+    background: -webkit-linear-gradient(left, #ced4da 0%, #dee2e6 35%, #dee2e6 65%, #ced4da 100%);
+    background: linear-gradient(to right, #ced4da 0%, #dee2e6 35%, #dee2e6 65%, #ced4da 100%);
     padding-bottom: 0.5rem; }
     section.section-index-conditions .card {
       min-width: 18rem;
       margin-bottom: 1rem; }
+
+.card.card-book {
+  background: none;
+  border: none; }
+  .card.card-book img.card-img-top {
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.3); }
 
 p {
   max-width: 900px; }

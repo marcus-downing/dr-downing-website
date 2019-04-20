@@ -8,3 +8,23 @@
 		font-size: 1.5rem;
 	}
 }
+
+.navbar {
+	padding: 0;
+
+	&, li, a {
+		line-height: 4rem;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	a {
+		font-weight: bold;
+		color: $teal;
+
+		&:hover, &:active {
+			background: $teal;
+			color: white;
+		}
+	}
+}
