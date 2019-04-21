@@ -7,7 +7,10 @@ const layouts = require('handlebars-layouts');
 
 const sass = require('node-sass');
 const grayMatter = require('gray-matter');
-const markdown = require( "markdown" ).markdown;
+// const markdown = require( "markdown" ).markdown;
+const MarkdownIt = require('markdown-it');
+const markdown = new MarkdownIt();
+
 
 
 // STYLESHEET
@@ -55,17 +58,20 @@ function loadMarkdownFile(filename) {
 	var data = fs.readFileSync(filename, 'utf-8');
 	var matter = grayMatter(data);
 
-	var data = {
-		title: matter.data.title,
-		subtitle: _.has(matter.data, "subtitle") ? matter.data.subtitle : false,
-		article: markdown.toHTML(matter.content),
-	};
+	var data = _.defaults(matter.data, {
+		subtitle: false,
+		hide: false,
+		excerpt: ''
+	});
+	data.article = markdown.render(matter.content);
 
-	if (_.has(matter.data, "excerpt") && matter.data.excerpt != "") {
-		data.excerpt = autop(matter.data.excerpt);
+	if (data.excerpt != "") {
+		data.excerpt = autop(data.excerpt);
 	} else {
-		var firstpara = matter.content.trim().split(/\n/)[0];
-		data.excerpt = markdown.toHTML(firstpara);
+		var paras = matter.content.trim().split(/\n/);
+		paras = _.map(paras, para => para.replace(/^#+/, '').trim());
+		var firstpara = paras[0];
+		data.excerpt = markdown.render(firstpara);
 	}
 
 	// data.excerpt = data.excerpt.replace(/(\.|;|:)$/, '')+'...';
@@ -122,6 +128,7 @@ _.each(fs.readdirSync('./articles', { withFileTypes: true }), file => {
 // HOME PAGE and SPECIAL PAGES
 
 _.each(['index', 'conditions', 'articles', 'books'], fn => {
+	console.log("Page:", fn);
 	var template = h.compile(fs.readFileSync('./pages/'+fn+'.html.h', 'utf8'));
 	var data = {
 		articles: articles,

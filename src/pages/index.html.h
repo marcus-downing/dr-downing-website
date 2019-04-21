@@ -4,7 +4,7 @@
 <section class='section-video gradient'>
 	<div class='container'>
 		<div class="embed-responsive embed-responsive-16by9">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/pW-FzAelj1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/5CR80qTpiFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
 </section>
@@ -92,10 +92,29 @@
 </section>
 
 <section class="gradient">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="720" height="405" src="https://www.youtube.com/embed/pW-FzAelj1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<blockquote>
+					<p>Something something</p>
+				</blockquote>
+				<p>Something something</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="gradient">
 	<div class='container'>
 		<h2>Articles</h2>
 		<div class="card-columns">
 {{#each articles}}
+{{#unless hide}}
 			<a href='{{url}}' class='card card-article'>
 				<div class="card-body">
       				<h3 class="card-title">{{title}}</h3>
@@ -105,6 +124,7 @@
 					</div>
 				</div>
 			</a>
+{{/unless}}
 {{/each}}
 		</div>
 	</div>

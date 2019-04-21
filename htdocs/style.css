@@ -7098,8 +7098,8 @@ section {
   .card.card-book img.card-img-top {
     box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.3); }
 
-p {
-  max-width: 900px; }
+p, ul, li {
+  max-width: 800px; }
 
 a {
   color: #20c997; }
@@ -7113,3 +7113,17 @@ a {
     text-decoration: none; }
     a.card:hover p {
       color: white; }
+
+table thead th {
+  border-bottom: 2px solid #adb5bd; }
+
+table tr:nth-child(2n) td, table tr:nth-child(2n) th {
+  background: #e9ecef; }
+  table tr:nth-child(2n) td:nth-child(2n), table tr:nth-child(2n) th:nth-child(2n) {
+    background: #dee2e6; }
+
+table td, table th {
+  min-width: 100px;
+  padding: 2px 3px; }
+  table td:nth-child(2n), table th:nth-child(2n) {
+    background: #f8f9fa; }

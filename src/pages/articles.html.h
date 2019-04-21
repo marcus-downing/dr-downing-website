@@ -15,6 +15,7 @@
 
 		<div class="card-columns">
 {{#each articles}}
+{{#unless hide}}
 			<a href='{{url}}' class='card card-article'>
 				<div class="card-body">
       				<h3 class="card-title">{{title}}</h3>
@@ -24,6 +25,7 @@
 					</div>
 				</div>
 			</a>
+{{/unless}}
 {{/each}}
 		</div>
 	</div>

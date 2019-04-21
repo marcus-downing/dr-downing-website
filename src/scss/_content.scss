@@ -55,8 +55,8 @@ section {
 	}
 }
 
-p {
-	max-width: 900px;
+p, ul, li {
+	max-width: 800px;
 }
 
 a {
@@ -76,6 +76,31 @@ a {
 			p {
 				color: white;
 			}
+		}
+	}
+}
+
+table {
+	thead {
+		th {
+			border-bottom: 2px solid $gray-500;
+		}
+	}
+
+	tr:nth-child(2n) {
+		td, th {
+			background: $gray-200;
+			&:nth-child(2n) {
+				background: $gray-300;
+			}
+		}
+	}
+
+	td, th {
+		min-width: 100px;
+		padding: 2px 3px;
+		&:nth-child(2n) {
+			background: $gray-100;
 		}
 	}
 }
