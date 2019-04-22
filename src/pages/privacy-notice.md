@@ -112,6 +112,8 @@ Following your last contact with us we will retain your electronic medical recor
 
 We do use electronic forms on our website making use of an available ‘forms module’ which has a number of built-in features to help ensure privacy. We also aim to use secure forms where appropriate. 
 
+### b. Cookies
+
 In compliance with EU legislation, the following table lists the use of cookies on this web site:
 
 | Cookie name | Purpose |
@@ -124,6 +126,7 @@ Cookies are small. We do not make use of cookies to collect any private or perso
 Advanced areas of this site may use cookies to store your presentation preferences in a purely technical fashion with no individually identifiable information. Note also our statement on analytics software below – as analytics software also uses cookies to function.
 
 Most web browsers allow some control of most cookies through the browser settings. To find out more about cookies, including how to see what cookies have been set and how to manage and delete them, visit www.allaboutcookies.org 
+
 To opt out of being tracked by Google Analytics across all websites visit http://tools.google.com/dlpage/gaoptout 
 
 ## 9. Analytics 

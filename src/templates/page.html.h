@@ -10,12 +10,11 @@
 		  </ol>
 		</nav>
 
-<h1>{{ title }}</h1>
-{{#if subtitle}}
-<h3 class='subtitle'>{{subtitle}}</h3>
-{{/if}}
+{{#embed "title"}}{{/embed}}
 
+<article class="main content">
 {{{article}}}
+</article>
 </div>
 </section>
 

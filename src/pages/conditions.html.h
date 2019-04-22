@@ -1,4 +1,4 @@
-{{#extend "layout" title="Home"}}
+{{#extend "layout" title="Conditions"}}
 
 {{#content "body"}}
 <section class='gradient'>
@@ -44,10 +44,10 @@
 				</div>
 			</a>
 
-			<a class='card' href='/conditions/_/'>
+			<a class='card' href='/conditions/parkinsons/'>
 				<img src="/assets/kitten.jpg" class="card-img-top" alt="Kitten">
 				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
+					<h4 class="card-title">Parkinson's Disease</h4>
 				</div>
 			</a>
 

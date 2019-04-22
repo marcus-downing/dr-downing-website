@@ -10,14 +10,16 @@
 		    <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
 		  </ol>
 		</nav>
-<h1>{{ title }}</h1>
-{{#if subtitle}}
-<h3 class='subtitle'>{{subtitle}}</h3>
-{{/if}}
+
+{{#embed "title"}}{{/embed}}
 
 <div class="row">
 <div class="col-sm-6 col-md-8">
+
+<article class="main content">
 {{{article}}}
+</article>
+
 </div>
 <div class="col-sm-6 col-md-4">
 (articles)

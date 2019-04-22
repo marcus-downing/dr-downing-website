@@ -38,6 +38,7 @@ h.registerHelper(layouts(h));
 h.registerPartial('layout', fs.readFileSync('./templates/layout.html.h', 'utf8'));
 h.registerPartial('header', fs.readFileSync('./templates/header.html.h', 'utf8'));
 h.registerPartial('footer', fs.readFileSync('./templates/footer.html.h', 'utf8'));
+h.registerPartial('title', fs.readFileSync('./templates/title.html.h', 'utf8'));
 
 // Load pages and articles
 var pages = [];
@@ -83,8 +84,9 @@ function loadMarkdownFile(filename) {
 // STATIC PAGES
 
 templates = {};
-templates['page'] = h.compile(fs.readFileSync('./templates/page.html.h', 'utf-8'));
-templates['condition'] = h.compile(fs.readFileSync('./templates/page.html.h', 'utf-8'));
+_.each(['page', 'condition', 'article'], tpl => {
+	templates[tpl] = h.compile(fs.readFileSync('./templates/'+tpl+'.html.h', 'utf-8'));
+});
 
 _.each(fs.readdirSync('./pages', { withFileTypes: true }), file => {
 	if (file.name.match(/\.md$/)) {
@@ -114,7 +116,6 @@ _.each(fs.readdirSync('./pages', { withFileTypes: true }), file => {
 
 // ARTICLES
 
-var articleTemplate = h.compile(fs.readFileSync('./templates/article.html.h', 'utf-8'));
 _.each(fs.readdirSync('./articles', { withFileTypes: true }), file => {
 	if (file.name.match(/\.md$/)) {
 		var filename = './articles/'+file.name;
@@ -125,7 +126,11 @@ _.each(fs.readdirSync('./articles', { withFileTypes: true }), file => {
 		articledata.url = '/articles/'+name+'/';
 		articles.push(articledata);
 
-		var out = articleTemplate(articledata);
+		var templatename = articledata.template;
+		if (_.isEmpty(templatename) || !_.has(templates, templatename)) {
+			templatename = 'article';
+		}
+		var out = templates[templatename](articledata);
 		fs.mkdirSync('../htdocs/articles/'+name, { recursive: true });
 		fs.writeFile('../htdocs/articles/'+name+'/index.html', out, (err) => {
 			if (err) console.log(err);
