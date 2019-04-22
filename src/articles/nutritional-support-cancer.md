@@ -2,6 +2,7 @@
 title: Nutritional support in cancer
 ---
 
+I am not a cancer specialist, and I cannot replace your oncologist and/or surgeon. Nor do I have the training or qualifications to tell them what to do. What I can offer you if you have a diagnosis of cancer is best described as adjunctive nutritional and metabolic support.
 
 ## Cut out carbs
 The most important single thing to do when you have a diagnosis of cancer is to cut out carbohydrates as much as possible, and replace them with organic protein and fats/oils. For several reasons;

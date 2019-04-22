@@ -9,7 +9,11 @@
 		    <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
 		  </ol>
 		</nav>
-<h2>{{ title }}</h2>
+
+<h1>{{ title }}</h1>
+{{#if subtitle}}
+<h3 class='subtitle'>{{subtitle}}</h3>
+{{/if}}
 
 {{{article}}}
 </div>

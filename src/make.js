@@ -82,7 +82,10 @@ function loadMarkdownFile(filename) {
 
 // STATIC PAGES
 
-var pageTemplate = h.compile(fs.readFileSync('./templates/page.html.h', 'utf-8'));
+templates = {};
+templates['page'] = h.compile(fs.readFileSync('./templates/page.html.h', 'utf-8'));
+templates['condition'] = h.compile(fs.readFileSync('./templates/page.html.h', 'utf-8'));
+
 _.each(fs.readdirSync('./pages', { withFileTypes: true }), file => {
 	if (file.name.match(/\.md$/)) {
 		var filename = './pages/'+file.name;
@@ -93,7 +96,15 @@ _.each(fs.readdirSync('./pages', { withFileTypes: true }), file => {
 		pagedata.url = '/'+name+'/';
 		pages.push(pagedata);
 
-		var out = pageTemplate(pagedata);
+		var templatename = pagedata.template;
+		if (_.isEmpty(templatename) || !_.has(templates, templatename)) {
+			if (name.match(/^conditions\//))
+				templatename = 'condition';
+			else
+				templatename = 'page';
+		}
+		console.log(" - With template:", templatename);
+		var out = templates[templatename](pagedata);
 		fs.mkdirSync('../htdocs/'+name, { recursive: true });
 		fs.writeFile('../htdocs/'+name+'/index.html', out, (err) => {
 			if (err) console.log(err);
