@@ -22,7 +22,10 @@
 
 </div>
 <div class="col-sm-6 col-md-4">
-(articles)
+
+{{#each articles}}
+{{/each}}
+
 </div>
 </div>
 

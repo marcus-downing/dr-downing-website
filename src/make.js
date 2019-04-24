@@ -126,6 +126,9 @@ _.each(fs.readdirSync('./articles', { withFileTypes: true }), file => {
 		articledata.url = '/articles/'+name+'/';
 		articles.push(articledata);
 
+		// linked articles
+		// ...
+
 		var templatename = articledata.template;
 		if (_.isEmpty(templatename) || !_.has(templates, templatename)) {
 			templatename = 'article';

@@ -1,5 +1,6 @@
 ---
 title: Cancer
+articles: nutritional-support-cancer, radioactive-fallout
 ---
 
 I am not a cancer specialist, and I cannot replace your oncologist and/or surgeon. Nor do I have the training or qualifications to tell them what to do. What I can offer you if you have a diagnosis of cancer is best described as adjunctive nutritional and metabolic support. That may include specific nutrients at high doses, including:

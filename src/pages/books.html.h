@@ -73,6 +73,7 @@
 				<img class="card-img-top" src="/assets/cover-jnem.jpg">
 				<div class="card-body">
 					<h3 class="card-title">Journal of Nutritional and Environmental Medicine</h3>
+					<p>Editor 1990-2009</p>
 				</div>
 			</article>
 		</div>
