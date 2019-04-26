@@ -7093,11 +7093,13 @@ section {
       min-width: 18rem;
       margin-bottom: 1rem; }
 
-.card.card-book {
-  background: none;
-  border: none; }
-  .card.card-book img.card-img-top {
-    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.3); }
+.card {
+  margin-bottom: 0.75rem; }
+  .card.card-book {
+    background: none;
+    border: none; }
+    .card.card-book img.card-img-top {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); }
 
 article.main, p, ul, li, blockquote {
   max-width: 800px; }

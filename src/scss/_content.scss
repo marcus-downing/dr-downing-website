@@ -49,12 +49,16 @@ section {
 	}
 }
 
-.card.card-book {
-	background: none;
-	border: none;
+.card {
+    margin-bottom: 0.75rem;
 
-	img.card-img-top {
-		box-shadow: 0 1.5px 4px rgba(0,0,0,0.3);
+	&.card-book {
+		background: none;
+		border: none;
+
+		img.card-img-top {
+			box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+		}
 	}
 }
 

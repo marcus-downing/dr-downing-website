@@ -23,7 +23,16 @@
 </div>
 <div class="col-sm-6 col-md-4">
 
-{{#each articles}}
+{{#each linked_articles}}
+	<a href='{{url}}' class='card card-article'>
+		<div class="card-body">
+				<h3 class="card-title">{{title}}</h3>
+				{{#if subtitle}}<h5 class='subtitle'>{{subtitle}}</h5>{{/if}}
+			<div class='excerpt'>
+				{{{excerpt}}}
+			</div>
+		</div>
+	</a>
 {{/each}}
 
 </div>

@@ -23,7 +23,7 @@ sass.render({
 	if (err) console.log(err);
 
 	fs.writeFile(style_css, result.css, (err) => {
-
+		console.log("Stylesheet");
 	});
 });
 
@@ -40,9 +40,6 @@ h.registerPartial('header', fs.readFileSync('./templates/header.html.h', 'utf8')
 h.registerPartial('footer', fs.readFileSync('./templates/footer.html.h', 'utf8'));
 h.registerPartial('title', fs.readFileSync('./templates/title.html.h', 'utf8'));
 
-// Load pages and articles
-var pages = [];
-var articles = [];
 
 function autop(content) {
 	var paras = content.split(/\n/);
@@ -80,6 +77,36 @@ function loadMarkdownFile(filename) {
 	return data;
 }
 
+// Load pages and articles
+var pages = {};
+var articles = {};
+
+_.each(fs.readdirSync('./pages', { withFileTypes: true }), file => {
+	if (file.name.match(/\.md$/)) {
+		var filename = './pages/'+file.name;
+		var name = file.name.replace(/\.md$/, '').replace(/_/, '/');
+
+		var pagedata = loadMarkdownFile(filename);
+		pagedata.name = name;
+		pagedata.url = '/'+name+'/';
+		pages[name] = pagedata;
+	}
+});
+
+_.each(fs.readdirSync('./articles', { withFileTypes: true }), file => {
+	if (file.name.match(/\.md$/)) {
+		var filename = './articles/'+file.name;
+		var name = file.name.replace(/\.md$/, '');
+
+		var articledata = loadMarkdownFile(filename);
+		articledata.name = name;
+		articledata.url = '/articles/'+name+'/';
+		articles[name] = articledata;
+	}
+});
+
+// console.log("Articles:", articles);
+
 
 // STATIC PAGES
 
@@ -88,60 +115,53 @@ _.each(['page', 'condition', 'article'], tpl => {
 	templates[tpl] = h.compile(fs.readFileSync('./templates/'+tpl+'.html.h', 'utf-8'));
 });
 
-_.each(fs.readdirSync('./pages', { withFileTypes: true }), file => {
-	if (file.name.match(/\.md$/)) {
-		var filename = './pages/'+file.name;
-		var name = file.name.replace(/\.md$/, '').replace(/_/, '/');
-		console.log("Page:", name);
+_.each(pages, (pagedata, name) => {
+	console.log("Page:", name);
 
-		var pagedata = loadMarkdownFile(filename);
-		pagedata.url = '/'+name+'/';
-		pages.push(pagedata);
+	// linked articles
+	if (_.has(pagedata, "articles")) {
+		var as = pagedata.articles.split(/, */);
 
-		var templatename = pagedata.template;
-		if (_.isEmpty(templatename) || !_.has(templates, templatename)) {
-			if (name.match(/^conditions\//))
-				templatename = 'condition';
-			else
-				templatename = 'page';
-		}
-		console.log(" - With template:", templatename);
-		var out = templates[templatename](pagedata);
-		fs.mkdirSync('../htdocs/'+name, { recursive: true });
-		fs.writeFile('../htdocs/'+name+'/index.html', out, (err) => {
-			if (err) console.log(err);
-		});
+		pagedata.linked_articles = _.map(as, a => articles[a]);
 	}
+
+	var templatename = pagedata.template;
+	if (_.isEmpty(templatename) || !_.has(templates, templatename)) {
+		if (name.match(/^conditions\//))
+			templatename = 'condition';
+		else
+			templatename = 'page';
+	}
+
+	var out = templates[templatename](pagedata);
+	fs.mkdirSync('../htdocs/'+name, { recursive: true });
+	fs.writeFile('../htdocs/'+name+'/index.html', out, (err) => {
+		if (err) console.log(err);
+	});
 });
 
 // ARTICLES
 
-_.each(fs.readdirSync('./articles', { withFileTypes: true }), file => {
-	if (file.name.match(/\.md$/)) {
-		var filename = './articles/'+file.name;
-		var name = file.name.replace(/\.md$/, '');
-		console.log("Article:", name);
+_.each(articles, (articledata, name) => {
+	console.log("Article:", name);
 
-		var articledata = loadMarkdownFile(filename);
-		articledata.url = '/articles/'+name+'/';
-		articles.push(articledata);
-
-		// linked articles
-		// ...
-
-		var templatename = articledata.template;
-		if (_.isEmpty(templatename) || !_.has(templates, templatename)) {
-			templatename = 'article';
-		}
-		var out = templates[templatename](articledata);
-		fs.mkdirSync('../htdocs/articles/'+name, { recursive: true });
-		fs.writeFile('../htdocs/articles/'+name+'/index.html', out, (err) => {
-			if (err) console.log(err);
-		});
+	// linked articles
+	if (_.has(articledata, "articles")) {
+		var as = articledata.articles.split(/, */);
+		articledata.linked_articles = _.map(as, a => articles[a]);
 	}
-});
 
-// console.log("Articles", articles);
+	var templatename = articledata.template;
+	if (_.isEmpty(templatename) || !_.has(templates, templatename)) {
+		templatename = 'article';
+	}
+
+	var out = templates[templatename](articledata);
+	fs.mkdirSync('../htdocs/articles/'+name, { recursive: true });
+	fs.writeFile('../htdocs/articles/'+name+'/index.html', out, (err) => {
+		if (err) console.log(err);
+	});
+});
 
 
 // HOME PAGE and SPECIAL PAGES
