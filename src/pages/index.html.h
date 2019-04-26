@@ -100,10 +100,9 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-				<blockquote>
-					<p>Something something</p>
-				</blockquote>
-				<p>Something something</p>
+				<h3>BodyBio UK</h3>
+				<p>Interview with BodyBio on cellular health and ecological medicine.</p>
+				<a class="btn btn-teal" href="https://bodybio.com/">BodyBio UK</a>
 			</div>
 		</div>
 	</div>
