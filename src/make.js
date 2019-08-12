@@ -51,6 +51,18 @@ function autop(content) {
 	return paras.join("\n");
 }
 
+function render(content) {
+	// console.log("Content <<", content, ">>");
+	content = markdown.render(content);
+
+	content = content.replace(/\[(.*?)\]\(&lt;(.*?)&gt;\)/, function (link, text, url) {
+		console.log(`Link: ${text} = ${url}`);
+		return `<a href='${url}'>${text}</a>`;
+	});
+
+	return content;
+}
+
 function loadMarkdownFile(filename) {
 	// extract frontmatter
 	var data = fs.readFileSync(filename, 'utf-8');
@@ -61,7 +73,7 @@ function loadMarkdownFile(filename) {
 		hide: false,
 		excerpt: ''
 	});
-	data.article = markdown.render(matter.content);
+	data.article = render(matter.content);
 
 	if (data.excerpt != "") {
 		data.excerpt = autop(data.excerpt);
@@ -69,7 +81,7 @@ function loadMarkdownFile(filename) {
 		var paras = matter.content.trim().split(/\n/);
 		paras = _.map(paras, para => para.replace(/^#+/, '').trim());
 		var firstpara = paras[0];
-		data.excerpt = markdown.render(firstpara);
+		data.excerpt = render(firstpara);
 	}
 
 	// data.excerpt = data.excerpt.replace(/(\.|;|:)$/, '')+'...';

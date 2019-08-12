@@ -7193,13 +7193,13 @@ section {
     background: linear-gradient(to right, #f8f9fa 0%, #fcfdfe 35%, #fcfdfe 65%, #f8f9fa 100%); }
   section.section-video {
     padding-bottom: 0; }
-  section.section-index-conditions {
+  section.section-index-conditions, section.section-dark {
     background: #ced4da;
     background: -moz-linear-gradient(left, #ced4da 0%, #dee2e6 35%, #dee2e6 65%, #ced4da 100%);
     background: -webkit-linear-gradient(left, #ced4da 0%, #dee2e6 35%, #dee2e6 65%, #ced4da 100%);
     background: linear-gradient(to right, #ced4da 0%, #dee2e6 35%, #dee2e6 65%, #ced4da 100%);
     padding-bottom: 0.5rem; }
-    section.section-index-conditions .card {
+    section.section-index-conditions .card, section.section-dark .card {
       min-width: 18rem;
       margin-bottom: 1rem; }
 

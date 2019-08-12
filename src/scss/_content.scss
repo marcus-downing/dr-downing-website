@@ -38,7 +38,7 @@ section {
 		padding-bottom: 0;
 	}
 
-	&.section-index-conditions {
+	&.section-index-conditions, &.section-dark {
 		@include dark-section-bg;
 		padding-bottom: 0.5rem;
 
