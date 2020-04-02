@@ -119,9 +119,10 @@ _.each(fs.readdirSync('./articles', { withFileTypes: true }), file => {
 });
 
 let [stickyArticles, nonStickyArticles] = _.partition(articles, article => article.sticky);
-articles = stickyArticles.concat(nonStickyArticles);
+let orderedArticles = stickyArticles.concat(nonStickyArticles);
+let heroArticles = _.filter(articles, article => article.hero);
 
-// console.log("Articles:", articles);
+// console.log("Hero articles:", heroArticles);
 
 
 // STATIC PAGES
@@ -158,7 +159,7 @@ _.each(pages, (pagedata, name) => {
 
 // ARTICLES
 
-_.each(articles, (articledata, name) => {
+_.each(orderedArticles, (articledata, name) => {
 	console.log("Article:", articledata.name);
 
 	// linked articles
@@ -186,7 +187,8 @@ _.each(['index', 'conditions', 'articles', 'books'], fn => {
 	console.log("Page:", fn);
 	var template = h.compile(fs.readFileSync('./pages/'+fn+'.html.h', 'utf8'));
 	var data = {
-		articles: articles,
+		hero: heroArticles,
+		articles: orderedArticles,
 	};
 	var out = template(data);
 

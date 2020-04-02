@@ -9,6 +9,21 @@
 	</div>
 </section>
 
+{{#if hero}}
+<section class='gradient'>
+	<div class='container'>
+	{{#each hero}}
+		<article class='card card-article card-hero'>
+			<div class='card-body'>
+			<h5 class="card-title">{{title}}</h5>
+			{{{article}}}
+			</div>
+		</article>
+	{{/each}}
+	</div>
+</section>
+{{/if}}
+
 <section class='gradient'>
 	<div class='container'>
 		<div class='row'>

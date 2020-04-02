@@ -7210,6 +7210,8 @@ section {
     border: none; }
     .card.card-book img.card-img-top {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); }
+  .card.card-hero {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.6); }
 
 article.main, p, ul, li, blockquote {
   max-width: 800px; }
