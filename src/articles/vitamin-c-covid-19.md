@@ -1,5 +1,6 @@
 ---
 title: Vitamin C and COVID-19 Coronavirus
+sticky: yes
 excerpt: "There is only one existing treatment for the new coronavirus: vitamin C."
 ---
 

@@ -71,6 +71,7 @@ function loadMarkdownFile(filename) {
 	var data = _.defaults(matter.data, {
 		subtitle: false,
 		hide: false,
+		sticky: false,
 		excerpt: ''
 	});
 	data.article = render(matter.content);
@@ -117,6 +118,9 @@ _.each(fs.readdirSync('./articles', { withFileTypes: true }), file => {
 	}
 });
 
+let [stickyArticles, nonStickyArticles] = _.partition(articles, article => article.sticky);
+articles = stickyArticles.concat(nonStickyArticles);
+
 // console.log("Articles:", articles);
 
 
@@ -155,7 +159,7 @@ _.each(pages, (pagedata, name) => {
 // ARTICLES
 
 _.each(articles, (articledata, name) => {
-	console.log("Article:", name);
+	console.log("Article:", articledata.name);
 
 	// linked articles
 	if (_.has(articledata, "articles")) {
@@ -169,8 +173,8 @@ _.each(articles, (articledata, name) => {
 	}
 
 	var out = templates[templatename](articledata);
-	fs.mkdirSync('../htdocs/articles/'+name, { recursive: true });
-	fs.writeFile('../htdocs/articles/'+name+'/index.html', out, (err) => {
+	fs.mkdirSync('../htdocs/articles/'+articledata.name, { recursive: true });
+	fs.writeFile('../htdocs/articles/'+articledata.name+'/index.html', out, (err) => {
 		if (err) console.log(err);
 	});
 });
