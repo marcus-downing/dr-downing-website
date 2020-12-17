@@ -1,7 +1,6 @@
 ---
 title: Open letter to Richard Horton, editor of The Lancet
 sticky: yes
-hero: yes
 ---
 
 #### Dear Richard Horton,
