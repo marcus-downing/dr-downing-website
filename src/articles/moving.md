@@ -1,7 +1,6 @@
 ---
 title: We are moving
-sticky: yes
-hero: yes
+hide: yes
 ---
 
 From Monday January 4th 2021 Dr Damien Downing and Nutrition Associates Ltd will be working in new premises at:

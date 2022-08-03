@@ -5,6 +5,10 @@ body {
 	@include gradient-bg;
 }
 
+body, p {
+	font-size: 1.1rem;
+}
+
 .subtitle {
 	margin-top: 0;
 }
@@ -16,7 +20,7 @@ body {
 
 blockquote {
 	&, p {
-		font-size: 1.4rem;
+		font-size: 1.3rem;
 	}
 
 	p {
@@ -51,6 +55,7 @@ section {
 
 .card {
     margin-bottom: 0.75rem;
+    vertical-align: middle;
 
 	&.card-book {
 		background: none;
@@ -66,7 +71,12 @@ section {
 	}
 
 	.card-title {
+		text-align: center;
+		vertical-align: middle;
+	}
 
+	.card-body {
+		box-shadow: 0 3px 5px rgba(0,0,0,0.3);
 	}
 }
 

@@ -27,29 +27,46 @@
 <section class='gradient'>
 	<div class='container'>
 		<div class='row'>
-			<div class='col-sm-6 col-md-5'>
+			<div class='col-sm-6 col-md-6'>
 				<blockquote>
 					<p>
-						Many illnesses have their root in poor nutrition, toxic exposures,
-						environmental factors, and their interactions with our genes, our
-						metabolisms and our immune systems. When the body’s
-						defences are damaged or exhausted, disease can take a hold.
+						Dr Downing practices <b>Ecological Medicine</b> (sometimes called Functional Medicine).
+						This is a systems approach to health - understanding how things influence one another within a whole.
 					</p>
+					<p>
+						Ecological medicine considers the interactions between individuals and the environment, and their health consequences.
+					</p>
+
+					<!-- <hr> -->
+
+					<!-- <p>
+						Dr Downing is the current president of the<br/>
+						<a href='https://www.bsem.org.uk/'>British Society for Ecological Medicine</a>.
+					</p> -->
 				</blockquote>
 			</div>
-			<div class='col-sm-6 col-md-7'>
-				<p>
-					We offer medical advice and treatments based on the principles
-					of ecological medicine, which considers the interactions
-					between individuals and the environment, and their health
-					consequences:
-				</p>
+			<div class='col-sm-6 col-md-6'>
 				<ul>
-					<li><b>INPUTS:</b> the impact of nutritional and environmental factors on the individual</li>
-					<li><b>PROCESSING:</b> the way we handle inputs and how that determines our health</li>
-					<li><b>OUTPUTS:</b> the impact of each individual’s actions on the environment, upon which we all depend.</li>
+					<li><b>INPUTS:</b> nutritional, environmental and lifestyle factors impact on the individual</li>
+					<li><b>PROCESSING:</b> our individual immune and biochemical systems determine the way we handle inputs and that determines our health</li>
+					<li><b>OUTPUTS:</b> each individual’s actions impact on the global environment, upon which we all depend</li>
 				</ul>
+
+				<p class='text-right'>
+					<a href='/approach/'>More...</a>
+				</p>
+
 			</div>
+		</div>
+		<!-- <hr> -->
+
+		<!-- <p>
+			Dr Downing is the current president of the<br/>
+		<p class='text-center'>
+			<a class='btn btn-teal btn-lg' href='https://www.bsem.org.uk/'>British Society for Ecological Medicine</a>
+		</p>
+		<p class='text-center'><a class="btn btn-teal btn-lg" href="/approach/">Our approach to restoring health</a></p> -->
+	
 		</div>
 	</div>
 </section>
@@ -58,65 +75,111 @@
 	<div class='container'>
 		<h3>What we do</h3>
 		<p>
-			Using medical history, examination and specialised laboratory
-			investigations, we assess nutritional status, toxic exposures,
-			metabolic and immune function, and plan treatment of the
-			problems identified.
+			Using medical history, physical examination and specialised laboratory investigations,
+			we assess your nutritional status, toxic exposures, metabolic and immune function,
+			and plan treatment of the problems identified.
 		</p>
 		<p>
-			Our standard of care is therefore not based on diagnosis. For
-			example in epilepsy your GP or consultant would prescribe
-			anticonvulsant therapy; we would seek to identify and correct
-			the causes, in nutrition, toxicity and metabolic disorder.
-			Treatment usually comprises diets, nutritional supplements and
-			detoxification procedures, administered both by mouth and by
-			injection. We also offer desensitisation injections for allergies.
+			Our standard of care is therefore not based on diagnosis.
+			For example in epilepsy your GP or consultant would prescribe anticonvulsant therapy;
+			we would seek to identify and correct the causes, in nutrition, toxicity and metabolic disorder.
+			Treatment usually comprises diets, nutritional supplements and detoxification procedures,
+			administered both by mouth and by injection.
+		</p>
+		<p>
+			We will never tell you to stop a treatment prescribed by another doctor;
+			if this needed to be considered we would explain why and advise you to discuss it with the prescribing doctor.
+		</p>
+		<p>
+			Recent events, including Covid and increasing pressure on the NHS, have caused many people 
+			to feel lost in the gaps between different specialists or departments. 
+			This can be helped by someone taking a comprehensive overview of your case, 
+			including both standard medical treatments and ecological aspects. 
+			A consultation with us can be an opportunity to do this.
+			Indeed, how could we be integrative without taking all aspects into consideration?
 		</p>
 	</div>
 </section>
 
 <section class='section-index-conditions'>
 	<div class='container'>
+		<h4>Conditions</h4>
 		<div class="card-deck">
 
+			<a class='card' href='/conditions/gut/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Gut</h4>
+				</div>
+			</a>
+
+			<a class='card' href='/conditions/environment/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Environment and <span class='text-nowrap'>toxic effects</span></h4>
+				</div>
+			</a>
+
+			<a class='card' href='/conditions/immunity/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Immunity and autoimmunity</h4>
+				</div>
+			</a>
+
+			<a class='card' href='/conditions/mch-ehs/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">MCS and EHS</h4>
+				</div>
+			</a>
+
+			<a class='card' href='/conditions/membrane-lipid/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Membrane lipids and <span class='text-nowrap'>lipid therapy</span></h4>
+				</div>
+			</a>
+
+			<a class='card' href='/conditions/mould/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Mould and mycotoxins</h4>
+				</div>
+			</a>
+
+			<a class='card' href='/conditions/mitochondrial/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Mitochondrial dysfunction</h4>
+				</div>
+			</a>
+
 			<a class='card' href='/conditions/cancer/'>
-				<!-- <img src="/assets/kitten.jpg" class="card-img-top" alt="Kitten"> -->
-				<div class="card-body">
+				<div class="card-body d-flex flex-column justify-content-center">
 					<h4 class="card-title">Cancer</h4>
 				</div>
 			</a>
 
+			<a class='card' href='/conditions/allergy/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Allergies and sensitivities</h4>
+				</div>
+			</a>
+
 			<a class='card' href='/conditions/cfs/'>
-				<!-- <img src="/assets/kitten.jpg" class="card-img-top" alt="Kitten"> -->
-				<div class="card-body">
+				<div class="card-body d-flex flex-column justify-content-center">
 					<h4 class="card-title">CFS</h4>
 				</div>
 			</a>
 
 			<a class='card' href='/conditions/lyme/'>
-				<!-- <img src="/assets/kitten.jpg" class="card-img-top" alt="Kitten"> -->
-				<div class="card-body">
-					<h4 class="card-title">Lyme Disease</h4>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Lyme disease</h4>
 				</div>
 			</a>
 
-			<a class='card' href='/conditions/allergy/'>
-				<!-- <img src="/assets/kitten.jpg" class="card-img-top" alt="Kitten"> -->
-				<div class="card-body">
-					<h4 class="card-title">Allergies &amp; Sensitivities</h4>
-				</div>
-			</a>
-
-			<a class='card' href='/conditions/parkinsons/'>
-				<!-- <img src="/assets/kitten.jpg" class="card-img-top" alt="Kitten"> -->
-				<div class="card-body">
-					<h4 class="card-title">Parkinson’s Disease</h4>
+			<a class='card' href='/conditions/neurodegenerative/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Neurodegenerative conditions</h4>
 				</div>
 			</a>
 
 			<a class='card' href='/conditions/undiagnosed/'>
-				<!-- <img src="/assets/kitten.jpg" class="card-img-top" alt="Kitten"> -->
-				<div class="card-body">
+				<div class="card-body d-flex flex-column justify-content-center">
 					<h4 class="card-title">Undiagnosed</h4>
 				</div>
 			</a>
@@ -125,7 +188,69 @@
 	</div>
 </section>
 
-<section class="gradient">
+
+<section class='section-dark'>
+	<div class='container'>
+		<h4>Treatments</h4>
+
+		<div class="card-deck">
+
+			<a class='card' href='/treatments/keto/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Ketogenic diet</h4>
+				</div>
+			</a>
+
+			<a class='card' href='/treatments/phospholipid/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Phospholipid exchange</h4>
+				</div>
+			</a>
+
+			<a class='card' href='/treatments/genomic/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Genomic medicine</h4>
+				</div>
+			</a>
+
+			<a class='card' href='/treatments/light/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Light</h4>
+				</div>
+			</a>
+
+			<a class='card' href='/treatments/nutrition/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Nutrition</h4>
+				</div>
+			</a>
+
+			<a class='card' href='/treatments/sleep/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Sleep</h4>
+				</div>
+			</a>
+
+			<a class='card' href='/treatments/vagus/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Stress, breathing and the vagus nerve</h4>
+				</div>
+			</a>
+
+			<a class='card' href='/treatments/desensitisation/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Desensitisation</h4>
+				</div>
+			</a>
+
+			<span></span>
+			<span></span>
+
+		</div>
+	</div>
+</section>
+
+<!-- <section class="gradient">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">
@@ -140,7 +265,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <section class="gradient">
 	<div class='container'>

@@ -1,7 +1,11 @@
 ---
-title: Open letter to Richard Horton, editor of The Lancet
+title: Open letter to Lancet Editor about COVID
 sticky: yes
 ---
+
+March, 2020
+
+
 
 #### Dear Richard Horton,
 

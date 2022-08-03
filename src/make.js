@@ -141,6 +141,10 @@ _.each(pages, (pagedata, name) => {
 
 		pagedata.linked_articles = _.map(as, a => articles[a]);
 	}
+	if (_.has(pagedata, "pages")) {
+		var ps = pagedata.pages.split(/, */);
+		pagedata.linked_pages = _.map(ps, p => pages[p]);
+	}
 
 	var templatename = pagedata.template;
 	if (_.isEmpty(templatename) || !_.has(templates, templatename)) {

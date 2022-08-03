@@ -78,7 +78,7 @@ It is wise to avoid the chemicals in most meat by eating only organic, but our b
 The food writer Michael Pollan summarises the basic good diet thus; “Eat food, not too much, mostly plants”. Every word in this counts. Eat means eat sit-down meals, don’t graze; food means not food-like substances, which it is so easy to consume; and plants means vegetables and fruit. Mostly vegetables though, especially if you are juicing them, so as to avoid the high sugar content of many fruits — and of some vegetables, such as carrots. Apart from carrots, take plenty of the colourful veg - red, yellow, purple  etc as well as green.
 
 
-## References
+#### References
 
 1. Cameron E, Pauling L. Supplemental ascorbate in the supportive treatment of cancer: Prolongation of survival times in terminal human cancer. Proc Natl Acad Sci U S A. 1976;73(10):3685-89.
 2. Cameron E, Pauling L. Supplemental ascorbate in the supportive treatment of cancer: re-evaluation of prolongation of survival times in terminal human cancer. Proc Natl Acad Sci U S A. 1978; 75 (9): 4538-42. 

@@ -1,0 +1,5 @@
+---
+title: Stress, breathing and the vagus nerve
+---
+
+How we feel and how we function is profoundly influenced by the autonomic nervous system. This has two parts. The sympathetic nervous system (main neurotransmitter adrenaline) is responsible for “fight or flight” functions so it makes us alert. The parasympathetic (main neurotransmitter acetylcholine) is responsible for “rest and repair” functions, and plays a big role in normal sleep and digestion. The vagus nerve is a major parasympathetic pathway that serves all the internal organs. It also carries messages from the gut bacteria, the microbiome, to the brain. Most of what we describe as feelings travels through the vagus. Breathing exercises, meditation, relaxation techniques all depend on the vagus. Vagal tone affects how we feel pain, our mood and wellbeing, how we handle stress, how we digest, of course, and a long list of diagnoses. It even turns out to be important in Covid infections and Post-Covid Syndrome.

@@ -20,14 +20,14 @@
     "light-server": "^2.6.2"
   },
   "dependencies": {
-    "bootstrap-scss": "^4.3.1",
+    "bootstrap-scss": "^4.6.1",
     "dateformat": "^3.0.3",
     "gray-matter": "^4.0.2",
-    "handlebars": "^4.1.1",
+    "handlebars": "^4.7.7",
     "handlebars-layouts": "^3.1.4",
     "lodash": "^4.17.11",
     "markdown": "^0.5.0",
     "markdown-it": "^8.4.2",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.1"
   }
 }

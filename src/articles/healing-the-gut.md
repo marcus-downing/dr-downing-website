@@ -1,5 +1,6 @@
 ---
 title: Healing the Gut
+pages: conditions/gut, treatments/nutrition
 ---
 
 When healing the gut there is an old principle to remember, known as Denis Healey’s First Rule of Holes; “When you find you’re in a hole, the first thing to do is stop digging”. 
