@@ -22,25 +22,22 @@ Sometimes I email patients direct for speed, but my personal email addresses con
 
 ### Clinic address
 
-The Elixir Clinic  
-Third Floor  
-75 Wimpole St  
-London  
-W1G 9RS
+The Hale Clinic
+3rd Floor
+4 Harley Street
+London
+W1G 9PB
+UK
 
 Currently ALL our clinics are held here.
-The premises are on the 3rd floor with elevator access, and a ramp to the front door on request. A disabled-appropriate toilet is available. 
+The premises are on the 3rd and 4th floor – our office and usual clinic is on the 4th.
+
+The elevator only goes to the 3rd floor, then there is a short flight of steps to the 4th. If you have accessibility problems please let us know in good time and we will arrange a room on the 3rd floor.
+
+There is a ramp to the front door on request. A disabled-appropriate toilet is available.
 
 Full emergency equipment including defibrillator is readily available. 
 Trained nursing staff are always present, with life-support training.
-
-### Postal address
-
-91 Wimpole St  
-London  
-W1G 0EF
-
-This is our address for correspondence. It is an office; there is NO CLINIC there. Send letters here, but do NOT come here for appointments. If you do find yourself there don’t worry, it is less than 200 metres from the clinic.
 
 ### Registered address
 
