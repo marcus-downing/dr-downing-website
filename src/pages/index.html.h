@@ -73,31 +73,59 @@
 
 <section class='section-dark'>
 	<div class='container'>
-		<h3>What we do</h3>
-		<p>
-			Using medical history, physical examination and specialised laboratory investigations,
-			we assess your nutritional status, toxic exposures, metabolic and immune function,
-			and plan treatment of the problems identified.
-		</p>
-		<p>
-			Our standard of care is therefore not based on diagnosis.
-			For example in epilepsy your GP or consultant would prescribe anticonvulsant therapy;
-			we would seek to identify and correct the causes, in nutrition, toxicity and metabolic disorder.
-			Treatment usually comprises diets, nutritional supplements and detoxification procedures,
-			administered both by mouth and by injection.
-		</p>
-		<p>
-			We will never tell you to stop a treatment prescribed by another doctor;
-			if this needed to be considered we would explain why and advise you to discuss it with the prescribing doctor.
-		</p>
-		<p>
-			Recent events, including Covid and increasing pressure on the NHS, have caused many people 
-			to feel lost in the gaps between different specialists or departments. 
-			This can be helped by someone taking a comprehensive overview of your case, 
-			including both standard medical treatments and ecological aspects. 
-			A consultation with us can be an opportunity to do this.
-			Indeed, how could we be integrative without taking all aspects into consideration?
-		</p>
+		<div class='row'>
+			<div class='col-sm-6 col-md-7'>
+				<h3>What we do</h3>
+				<p>
+					Using medical history, physical examination and specialised laboratory investigations,
+					we assess your nutritional status, toxic exposures, metabolic and immune function,
+					and plan treatment of the problems identified.
+				</p>
+				<p>
+					Our standard of care is therefore not based on diagnosis.
+					For example in epilepsy your GP or consultant would prescribe anticonvulsant therapy;
+					we would seek to identify and correct the causes, in nutrition, toxicity and metabolic disorder.
+					Treatment usually comprises diets, nutritional supplements and detoxification procedures,
+					administered both by mouth and by injection.
+				</p>
+				<h5>We will never tell you to stop a treatment prescribed by another doctor</h5>
+				<p>
+					If this needed to be considered we would explain why and advise you to discuss it with the prescribing doctor.
+				</p>
+				<p>
+					Recent events, including Covid and increasing pressure on the NHS, have caused many people 
+					to feel lost in the gaps between different specialists or departments. 
+					This can be helped by someone taking a comprehensive overview of your case, 
+					including both standard medical treatments and ecological aspects. 
+					A consultation with us can be an opportunity to do this.
+					Indeed, how could we be integrative without taking all aspects into consideration?
+				</p>
+			</div>
+			<div class='col-sm-6 col-md-5'>
+				<h3>&nbsp;</h3>
+				<div class='card-deck'>
+					<a class="card" href="/treatments/photobiomodulation/">
+						<div class="card-body d-flex flex-column justify-content-center">
+							<h4 class="card-title">Photobiomodulation</h4>
+							<blockquote>
+								Light is life  – and we are all going short<br>
+								But we can fix that
+							</blockquote>
+						</div>
+					</a>
+
+					<a class="card" href="/conditions/arthritis/">
+						<div class="card-body d-flex flex-column justify-content-center">
+							<h4 class="card-title">Rheumatoid Arthritis</h4>
+							<blockquote>
+								What causes Rheumatoid Arthritis? How to treat it?
+							</blockquote>
+						</div>
+					</a>
+
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -178,6 +206,12 @@
 				</div>
 			</a>
 
+			<a class='card' href='/conditions/arthritis/'>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Rheumatoid Arthritis</h4>
+				</div>
+			</a>
+
 			<a class='card' href='/conditions/undiagnosed/'>
 				<div class="card-body d-flex flex-column justify-content-center">
 					<h4 class="card-title">Undiagnosed</h4>
@@ -213,9 +247,15 @@
 				</div>
 			</a>
 
-			<a class='card' href='/treatments/light/'>
+			<!-- <a class='card' href='/treatments/light/'>
 				<div class="card-body d-flex flex-column justify-content-center">
 					<h4 class="card-title">Light</h4>
+				</div>
+			</a> -->
+
+			<a class="card" href="/treatments/photobiomodulation/">
+				<div class="card-body d-flex flex-column justify-content-center">
+					<h4 class="card-title">Photobiomodulation</h4>
 				</div>
 			</a>
 

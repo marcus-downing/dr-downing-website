@@ -1,5 +1,6 @@
 ---
 title: Light
+hide: yes
 ---
 
 Of course I am fascinated by light, ever since I wrote about it in my book Daylight Robbery in 1988. Light is the driver of all life on earth. As Weston Price said in 1928; “The dinner we have eaten was a part of the sun but a few months ago”. Vitamin D is a big part of this, but we know that light also stimulates production of NO, crucial for opening up blood vessels, and has effects on the endocrine system and the brain.

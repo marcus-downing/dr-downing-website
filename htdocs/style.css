@@ -7435,3 +7435,9 @@ table td, table th {
   padding: 2px 3px; }
   table td:nth-child(2n), table th:nth-child(2n) {
     background: #f8f9fa; }
+
+.content img {
+  max-width: 100%;
+  max-height: 800px;
+  display: block;
+  margin-top: 20px; }
